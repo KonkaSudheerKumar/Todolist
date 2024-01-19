@@ -10,7 +10,9 @@ window.addEventListener('load', () => {
         createTaskElement(taskText);
     });
 
-    form.addEventListener('submit', (e) => {
+    const submitButton = document.querySelector('#new-task-submit');
+
+    submitButton.addEventListener('click', (e) => {
         e.preventDefault();
 
         const task = input.value;
